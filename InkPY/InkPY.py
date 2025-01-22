@@ -55,16 +55,16 @@ plan = None
 pages = int(input("Pages printed per month: "))
 
 if pages > 0 and pages < 701:
-    if pages < 50:
-        plan = 1
-    elif pages < 100:
-        plan = 2
-    elif pages < 300:
-        plan = 3
-    elif pages < 700:
-        plan = 4
-    else:
+    if pages < 16:
         plan = 0
+    elif pages < 51:
+        plan = 1
+    elif pages < 101:
+        plan = 2
+    elif pages < 301:
+        plan = 3
+    else:
+        plan = 4
 else:
     plan = 5
     print("Not available")
