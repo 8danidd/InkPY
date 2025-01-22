@@ -67,6 +67,7 @@ if pages > 0 and pages < 701:
         plan = 4
 else:
     plan = 5
-    print("Not available")
 
+print(f"\nPlan in order to print {pages} per month:")
+print(plans[plan][0])
 print(f"Price: {plans[plan][1]} Euros")
